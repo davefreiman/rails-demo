@@ -1,0 +1,8 @@
+<h1>Home Page</h1>
+
+<p>Welcome <%= @word %></p>
+
+<% @blogs.each do |blog| %>
+  <h4><%= blog.title %></h4>
+  <p><%= blog.content %></p>
+<% end %>

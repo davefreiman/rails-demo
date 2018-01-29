@@ -1,0 +1,8 @@
+<%= link_to 'NEW POST', new_blog_path %>
+
+<% @blogs.each do |blog| %>
+  <h4><%= blog.title %></h4>
+  <p><%= blog.content %></p>
+  <%= link_to 'EDIT', edit_blog_path(blog) %>
+  <%= link_to 'DELETE', blog_path(blog), method: :delete %>
+<% end %>

@@ -1,0 +1,11 @@
+<%= form_for(@blog) do %>
+
+  <%= label_tag 'Title' %>
+  <%= text_field_tag 'title', @blog.title %>
+
+  <%= label_tag 'Content' %>
+  <%= text_field_tag 'content', @blog.content %>
+
+  <%= button_tag 'submit' %>
+
+<% end %>
